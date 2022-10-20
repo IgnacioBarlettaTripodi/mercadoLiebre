@@ -1,0 +1,486 @@
+/* ---- INFO A UTILIZAR
+
+Colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+Tipografía
+Familia: 'Roboto'
+
+Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+Íconos
+https://fontawesome.com/icons?d=gallery&m=free
+
+<div class="burger-menu">
+<i class="fas fa-bars"></i>
+</div>
+*/
+
+/*------------- COMIENZO DE CSS ---------------*/
+* {
+    margin: 0;
+    /*--Te saca todo el margen para luego acomodar--*/
+    padding: 0;
+    /*--Te saca todo el padding para luego acomodar--*/
+    box-sizing: border-box;
+    /*--Te cuenta total con margen y todo--*/
+}
+
+/* Las imagenes ocupan el 100% de su contenedor, siempre ubicarla dentro de un contenedor */
+img {
+    width: 100%;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------------- HEADER ---------------*/
+header {
+    background: #EAC926;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------- LOGO, BARRA, LUPA, COMPRA EN CUOTAS ---------------*/
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------- MENU BURGA ---------------*/
+.burger-container {
+    display: flex;
+    justify-content: center;
+}
+
+.burger-menu {
+    display: flex;
+    color: white;
+    border: 1px solid black;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #03264C;
+}
+
+/*------------- MENU NAVEGACION ---------------*/
+
+.menu-container {
+    display: none;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    padding: 0;
+    text-decoration: none;
+    
+}
+
+li {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.logo-bar-container {
+    display: flex;
+}
+
+/*------------- CUOTAS Y LOGO MANITO ---------------*/
+.card-container {
+    padding: 15px;
+    font-size: 12px;
+
+}
+
+/*------------- TITULO H3 ---------------*/
+.card-title {
+    font-weight: 100;
+    text-align: center;
+    font-weight: 500;
+}
+
+/*------------- ESPACIO DE MANITO ---------------*/
+.card-title i {
+    margin-right: 5px;
+}
+
+/*------------- LOGO MELI ---------------*/
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+/*------------- CONTAINER DE LUPA Y BUSCADOR ---------------*/
+
+.search-button-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------- BARRA DE BUSQUEDA Y LUPA ---------------*/
+
+.search-container {
+    display: flex;
+    width: 100%;
+}
+.search-container .form-container {
+    display: flex;
+    width: 100%;
+}
+
+/*------------- LUPA ---------------*/
+input {
+    width: 82%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 6px;
+}
+
+input:hover {
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    background: rgba(252, 251, 251, 0.9);
+}
+
+button {
+    width: 15%;
+    padding: 1px;
+    border: none;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+button:hover {
+    border: 2px solid rgba(0, 0, 0, 0.9);
+    background: rgba(252, 251, 251, 0.9);
+}
+
+body header .dolar-center {
+    text-align: center
+}
+
+main {
+    background: #ebebeb;
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------- FIN DE HEADER ---------------*/
+
+/*------------- MAIN ---------------*/
+
+body {
+    background-color: #ebebeb;
+}
+
+p {
+    font-size: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 6%;
+    margin-top: 2%;
+    color: black;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+body main .last-visit, .offer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+main section article .price {
+    font-size: 18px;
+    width: 40%;
+}
+
+main section article .discounts {
+    font-size: 16px;
+    font-weight: normal;
+    color: #39b54a;
+    width: 60%;
+}
+
+main section article .description {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: normal;
+    display: none;
+    transition: all 1000ms ease;
+}
+
+article:hover .description {
+    height: 30px;
+    display: block;
+}
+
+main section article {
+    background: #FFF;
+    margin: 10px 0;
+    transition: all 450ms ease;
+}
+
+main section article:hover {
+    box-shadow: 0 0 10px rgb(100, 100, 100);
+    height: 445px;
+}
+
+main section .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+article .box-article {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}   
+
+main section article:hover i {
+    transform: rotate(-90deg);
+}
+/*------------- FIN DE MAIN ---------------*/
+
+/*------------- COMIENZO DE FOOTER ---------------*/
+footer {
+    text-align: center;
+    background: #FFF;
+    background-position: center;
+    border: 12px solid white;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 5px 5px 5px 5px;
+}
+
+footer section .card,
+.security,
+.gift {
+    color: #1259c3;
+    height: 30px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+}
+
+.box-footer i {
+    transition: color 500ms;
+}
+.box-footer i:hover {
+    color: #EAC926;
+    
+} 
+
+.copy {
+    text-align: left;
+    font-size: 1rem;
+}
+
+/*------------- FIN DE FOOTER ---------------*/
+
+@media (min-width: 768px) {
+    /* HEADER */
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo-bar-container {
+        width: 70%;
+    }
+
+    .card-container {
+        width: 50%;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        font-size: 0.7rem;
+    }
+
+    .burger-container {
+        display: none;
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        font-size: 0.8rem;
+    }
+
+    ul {
+        /* border: 3px solid orange; */
+        display: flex;
+        margin: 0 10px;
+        width: 42%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    /*------------- MAIN ---------------*/
+
+    main section .box-container article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 40%;
+        margin: 10px auto;
+        height: 315px;
+        transition: all 500ms ease;
+    
+    }
+
+    main section article:hover {
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+        height: 340px;
+    }
+
+    article  {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    .copy {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 2%;
+    }
+    .card-container {
+        font-size: 0.8rem;
+    }
+    .nav-left, .nav-right {
+        width: 35%;
+    }
+    .search-container .form-container {
+        display: flex;
+        width: 90%;
+        padding: 10px;
+    }
+
+    /*------------- MAIN ---------------*/
+
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+    }
+
+    main section .box-container article {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        width: 22%;
+        height: 310px;
+        transition: all 500ms ease;
+    }
+    main section .box-container article:hover {
+        box-shadow: 0 0 10px #rgb(100, 100, 100);
+        height: 340px;
+    }
+
+    /*------------- FOOTER ---------------*/
+
+
+    footer .box-footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .cash, .box-gift, .box-security {
+        display: flex;
+        flex-direction: column;
+    }
+    .copy {
+        text-align: left;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    .nav-left, .nav-right {
+        width: 30%;
+    }
+
+    .search-container .form-container {
+        display: flex;
+        width: 90%;
+        padding: 8px;
+        height: 56px;
+    }
+
+    main section .box-container article {
+        height: 430px;
+        transition: all 500ms ease;
+    }
+    main section .box-container article:hover {
+        height: 460px;
+    }
+
+    .menu-container {
+        font-size: 1.1rem;
+    }
+
+}
