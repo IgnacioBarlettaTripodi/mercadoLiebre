@@ -452,7 +452,7 @@ footer section .card,
         flex-direction: column;
     }
     .copy {
-        text-align: left;
+        text-align: center;
         font-size: 0.8rem;
     }
 }
