@@ -126,7 +126,6 @@ li {
 /*------------- LOGO MELI ---------------*/
 .logo {
     width: 50%;
-    padding: 10px;
 }
 
 /*------------- CONTAINER DE LUPA Y BUSCADOR ---------------*/
@@ -233,7 +232,7 @@ main section article .description {
     margin-top: 10px;
     font-weight: normal;
     display: none;
-    transition: all 1000ms ease;
+    transition: all 450ms;
 }
 
 article:hover .description {
@@ -244,7 +243,7 @@ article:hover .description {
 main section article {
     background: #FFF;
     margin: 10px 0;
-    transition: all 450ms ease;
+    transition: all 450ms;
 }
 
 main section article:hover {
@@ -310,7 +309,7 @@ footer section .card,
 }
 
 .box-footer i {
-    transition: color 500ms;
+    transition: color 300ms;
 }
 .box-footer i:hover {
     color: #EAC926;
@@ -376,7 +375,7 @@ footer section .card,
         width: 40%;
         margin: 10px auto;
         height: 315px;
-        transition: all 500ms ease;
+        transition: all 450ms;
     
     }
 
@@ -428,7 +427,7 @@ footer section .card,
         position: relative;
         width: 22%;
         height: 310px;
-        transition: all 500ms ease;
+        transition: all 450ms;
     }
     main section .box-container article:hover {
         box-shadow: 0 0 10px #rgb(100, 100, 100);
@@ -473,7 +472,7 @@ footer section .card,
 
     main section .box-container article {
         height: 430px;
-        transition: all 500ms ease;
+        transition: all 450ms ease;
     }
     main section .box-container article:hover {
         height: 460px;
